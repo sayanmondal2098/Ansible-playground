@@ -1,7 +1,7 @@
 ---
 - name: Installation de htop
-  hosts: {{ hostlist }}
-  remote_user: pi
+  
+  remote_user: ph3n1x
   tasks:
     - name: test
       apt: name=htop state=latest
