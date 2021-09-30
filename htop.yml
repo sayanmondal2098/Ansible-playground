@@ -1,6 +1,6 @@
 ---
 - name: Installation de htop
-  
+  hosts: [Linux]
   remote_user: ph3n1x
   tasks:
     - name: test
