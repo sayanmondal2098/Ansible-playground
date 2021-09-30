@@ -1,0 +1,9 @@
+---
+- name: Installation de htop
+  hosts: {{ hostlist }}
+  remote_user: pi
+  tasks:
+    - name: test
+      apt: name=htop state=latest
+      become: true
+      become_user: ubuntu
