@@ -1,9 +1,9 @@
 ---
 - name: Installation de htop
   hosts: [Linux]
-  remote_user: ph3n1x
+  remote_user: ubuntu
   tasks:
     - name: test
       apt: name=htop state=latest
       become: true
-      become_user: ph3n1x
+      become_user: ubuntu
