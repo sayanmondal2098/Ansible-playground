@@ -8,3 +8,4 @@
         state: present
         name:
          - vlc
+         - wget
