@@ -1,6 +1,6 @@
 ---
 - name: Ensuring hosts good behavior
-  hosts: lxc_hosts
+  hosts: all
   gather_facts: yes
   tasks:
     - name: Looking for dnsmasq process
