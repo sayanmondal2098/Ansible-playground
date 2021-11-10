@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: install packages
+    - name: install htop
       become_user: root
       ansible_password: '{{ lookup("env", "ANSIPASS") }}'
       become: true
