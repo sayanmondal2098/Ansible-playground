@@ -4,7 +4,6 @@
     - name: install packages
       become_user: root
       become: true
-      ansible_password: ubuntu
       apt:
         state: present
         name:
