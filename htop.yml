@@ -2,8 +2,9 @@
 - hosts: all
   tasks:
     - name: install packages
-      became: true
+      become: true
+      become_user: ubuntu
       apt:
         state: present
         name:
-         - htop
+         - vlc
