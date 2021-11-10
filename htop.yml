@@ -3,7 +3,6 @@
   tasks:
     - name: install htop
       become_user: root
-      ansible_password: '{{ lookup("env", "ANSIPASS") }}'
       become: true
       apt:
         state: present
