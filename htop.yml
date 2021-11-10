@@ -10,4 +10,4 @@
       apt:
         state: present
         name:
-          - wget
+          - htop
