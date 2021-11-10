@@ -4,6 +4,8 @@
     - name: install packages
       become_user: root
       become: true
+        vars_files:
+         - secret
       apt:
         state: present
         name:
