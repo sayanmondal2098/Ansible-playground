@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  vars_files:
+    - secret
   tasks:
     - name: install packages
       become_user: root
