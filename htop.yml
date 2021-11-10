@@ -4,6 +4,7 @@
     - name: install packages
       become: true
       become_user: root
+      become_password: ubuntu
       apt:
         state: present
         name:
