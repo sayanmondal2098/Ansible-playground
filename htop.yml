@@ -7,4 +7,4 @@
       apt:
         state: present
         name:
-         - vlc
+         - wget
