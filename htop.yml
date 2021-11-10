@@ -2,9 +2,8 @@
 - hosts: all
   tasks:
     - name: install packages
+      become_user: ubuntu
       become: true
-      become_user: root
-      become_password: ubuntu
       apt:
         state: present
         name:
