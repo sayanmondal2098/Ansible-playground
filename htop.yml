@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: install packages
-    became: true
+      became: true
       apt:
         state: present
         name:
