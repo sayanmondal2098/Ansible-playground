@@ -1,6 +1,10 @@
-- name: install_htop.yml
-  gather_facts: yes
-  become: yes
-
-  roles:
-    - install_htop
+---
+- hosts: all
+  tasks:
+    - name: install packages
+      become: true
+      become_user: root
+      apt:
+        state: present
+        name:
+         - htop
