@@ -8,4 +8,4 @@
       apt:
         state: present
         name:
-         - htop
+         - htop 
