@@ -1,9 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: install htop
-      become_user: root
-      become: true
+    - name: install wget
       apt:
         state: present
         name:
